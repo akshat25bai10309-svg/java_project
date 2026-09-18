@@ -1,1 +1,4 @@
 *.class
+out.txt
+err.txt
+*.log

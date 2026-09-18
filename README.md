@@ -2,6 +2,8 @@
 
 A basic Java desktop application to create and manage events along with participant registrations using a Swing GUI.
 
+![Event Management System GUI](screenshots/GUI.png)
+
 ## Features
 
 - Add new events with event ID, name, date, and venue
@@ -14,11 +16,25 @@ A basic Java desktop application to create and manage events along with particip
 
 ## Project Structure
 
-- `Main.java` - Entry point of the program that starts the application.
-- `EventGUI.java` - GUI interface created using Java Swing (JFrame, JPanel, ActionListener).
-- `Event.java` - Represents an event and handles participant storage for that event.
-- `Participant.java` - Represents an individual participant with ID, name, and email.
-- `EventManager.java` - Console-based event manager logic.
+```text
+├── .vscode/               # VS Code workspace settings
+├── screenshots/           # Application screenshots (GUI.png)
+├── Event.java             # Event entity and participant management logic
+├── EventGUI.java          # Java Swing GUI interface
+├── EventManager.java      # Console-based event management logic
+├── Main.java              # Application entry point
+├── Participant.java       # Participant entity (ID, name, email)
+├── EventManager.jar       # Pre-built executable JAR package
+├── run.bat                # Windows launcher script
+├── statement.md           # Problem statement and project scope
+├── README.md              # Project overview and setup instructions
+└── Event_Management_System_Project_Report_Akshat_Shukla.pdf # Complete project report
+```
+
+## Documentation
+
+- [Problem Statement & Scope](statement.md)
+- [Project Report (PDF)](Event_Management_System_Project_Report_Akshat_Shukla.pdf)
 
 ## Requirements
 
@@ -26,7 +42,7 @@ A basic Java desktop application to create and manage events along with particip
 
 ## How to Run
 
-1. Open your terminal or command prompt in the project folder.
+1. Open your terminal or PowerShell in the project folder.
 2. Compile all the Java files:
    ```bash
    javac *.java
@@ -36,7 +52,10 @@ A basic Java desktop application to create and manage events along with particip
    java Main
    ```
 
-You can also run the GUI directly using:
-```bash
-java EventGUI
-```
+### Quick Run
+- **Via JAR**:
+  ```bash
+  java -jar EventManager.jar
+  ```
+- **On Windows**: Double-click `run.bat` or execute `.\run.bat` in PowerShell.
+
