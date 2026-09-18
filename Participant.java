@@ -10,6 +10,10 @@ public class Participant {
         this.email = email;
     }
  
+    public int getPart_Id() {
+        return part_Id;
+    }
+
     public int getParticipantId() {
         return part_Id;
     }
